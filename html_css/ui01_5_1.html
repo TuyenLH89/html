@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            width: 760px;
+            border: 1px solid red;
+            height: auto;
+        }
+        .head{
+            
+            border-bottom: 1px solid red;
+            width: 760px;
+            height: 100px;
+        }
+        .head .head1, .head2{
+            display: flex;
+            width: 599px;
+            border-top: 1px solid red;
+            
+        }
+        .head .head_img{
+            float: right;
+            width: 160px;
+            border-left: 1px solid red;
+            height: inherit;
+        }
+        .head .head_img img{
+            width: 160px;
+            height: 100px;
+        }
+        .head .head1{
+            justify-content: flex-end;
+            align-items: center;
+            background-color: red;
+            height: 29px;
+        }
+        .head .head2{
+            height: 59px;
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(235, 182, 182);
+        }
+        .head .head1 p{
+            color: aliceblue;
+            float: right;
+            text-align: center;
+            font-weight: bold;
+        }
+        .head .head2 p{
+            color: red;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        /* content */
+        .content{
+            display: flex;
+            
+        }
+        .content .content_left{
+            border-right: 1px solid red;
+        }
+        .content_right>ul>li, .content_left>ul>li{
+            list-style: square;
+            color: red;
+        }
+        .content_right span{
+            font-style: italic;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="head_img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEZ0nuSTF2K45HhMM98IfpegNRBqJZkMJFoA&s" alt="">
+            </div>
+            <div class="head1">
+                <p>Công nghệ dầu gội dưỡng tóc mới</p>
+            </div>
+            
+            <div class="head2">
+                <p>
+                    Tỏa sáng cùng <span>DOUBLE RICH</span>
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_left">
+                <ul>
+                    <li>
+                        Sản phẩm khuyến mãi:
+                    </li>
+                    <br>
+                    <ul>
+                        <li>Dầu gội Double Rich mới 200ml, 400ml có tem khuyến mãi</li>
+                    </ul>
+                    <br>
+                    <li>
+                        Đối tượng tham gia:
+                    </li>
+                    <br>
+                    <ul>
+                        <li>Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi.</li>
+                        <br>
+                        <li>Chương trình không áp dụng cho nhân viên, nhà phân phối bao gồm các tổng đại lý,
+                             đại lý, cửa hàng bán sỉ, lẻ và các cá nhân kinh doanh sản phẩm của công ty LDMP LG Vina,
+                              công ty quảng cáo, công ty là dịch vụ chương trình khuyến mãi này, nhân viên siêu thị
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="content_right">
+                <ul>
+                    <li>Cách thức nhận giải</li>
+                    <br>
+                    <ol>
+                        <li>
+                            <span>Giải khuyến khích: </span>
+                            Khách hàng đổi quà tại các cửa hàng bán lẻ trên toàn quốc bắt đầu. Bắt đầu từ ngày 15/06/2005 đến 17h ngày 12/08/2005
+                        </li>
+                        <br>
+                        <li>
+                            <span>Gải đặc biệt, nhất, nhì: </span>
+                            Khách hàng cắt phần mã vạch trên mỗi chai dầu gội có khuyến mãi và gởi kèm phiếu trúng thưởng về văn phòng công ty, hạn chót đến ngày 31/07/2005
+                             (căn cứ theo dấu bưu điện nơi gửi). Sau đó công ty sẽ gửi thư thông báo trúng thưởng và cách thức nhận quà cho khách hàng
+                        </li>
+                    </ol>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

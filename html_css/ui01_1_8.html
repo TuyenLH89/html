@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Món Ngon Hà Nội</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            width: 960px;
+            background-color: #fdedcb;
+        }
+        .monan{
+            float: left;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+        }
+        .menu{
+            display: inline;
+            width: 550px;
+            font-size: 20px;
+        }
+        .monan img{
+            margin-top: 30px;
+        }
+        .monan table, th, td{
+            border: 1px solid black;
+        }
+        .menu table{
+            border-collapse: collapse;
+            
+        }
+        .menu table tr:nth-child(2n){
+            background-color: aliceblue;
+        }
+        .menu table tr td:nth-child(2){
+            width: 300px;
+        }
+        th{
+            color: white;
+            background-color: #cd6404;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="monan">
+            <img src="../img/monan2.png" alt="Món Ăn" width="200px">
+        </div>
+        <div class="menu">
+            <h1>Các món ngon Hà Nội</h1>
+            <table>
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Tên món ăn</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Bánh cuốn Thanh Trì</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Xôi Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Chả cá Lã Vọng</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Cháo Cóc</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Bánh Gai Ninh Giang</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Bún Thang Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>Canh Lằng</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>Vịt Quay Lạng Sơn</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

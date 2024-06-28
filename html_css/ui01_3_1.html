@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            width: 960px;
+        }
+        .menu1 ul{
+            list-style: none;
+            
+        }
+        .menu1 li{
+            width: 120px;
+            height: 40px;
+            background-color: rgb(19, 56, 70);
+            text-align: center;
+            border-bottom: 1px solid white;
+            position: relative;
+        }
+        .menu1 a{
+            color: coral;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 120px;
+            height: 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .container .menu1 ul li a:hover{
+            
+            background-color: bisque;
+        }
+        .menu1 .sub_menu{
+            position: absolute;
+            left: 81px;
+            height: 0px;
+            top: 0px;
+            display: none;
+        }
+        .menu1 li:hover .sub_menu{
+            display: block;
+        }
+        .menu1{
+            border: 1px solid;
+            width: 30%;
+            margin-right: 0;
+        }
+
+        .menu2>ul{
+            display: flex;
+            list-style: none;
+        }
+        .menu2 li{
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-right: 1px solid rgb(222, 125, 125);
+            background-color: aqua;
+            position: relative;
+        }
+        .menu2 ul li:last-child{
+            border: none;
+        }
+        .menu2 .sub_menu>li{
+            border-right: none;
+            border-bottom: 1px solid wheat;
+        }
+        .menu2 a{
+            display: block;
+            width: 80px;
+            height: 30px;
+            text-decoration: none;
+        }
+        .menu2 li a:hover{
+            background-color: blanchedalmond;
+        }
+        .menu2 .sub_menu{
+            list-style: none;
+            position: absolute;
+            top: 30px;
+            left: -40px;
+            display: none;
+        }
+        .menu2 ul li:hover .sub_menu{
+            display: block;
+        }
+        .menu2>ul>li:first-child{
+            border-radius: 10px 0 0 10px;
+        }
+        .menu2>ul>li:last-child{
+            border-radius: 0 10px 10px 0;
+        }
+        .menu2>ul>li:first-child>a{
+            border-radius: 10px 0 0 10px;
+        }
+        .menu2>ul>li:last-child>a{
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu1">
+            <ul>
+                <li><a href="">Trang Chủ</a></li>
+                <li><a href="">Tin Tức</a></li>
+                <li>
+                    <a href="">Sản Phẩm</a>
+                    <ul class="sub_menu">
+                        <li><a href="">item1</a></li>
+                        <li><a href="">item2</a></li>
+                        <li><a href="">item3</a></li>
+                        <li><a href="">item4</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Khóa Học</a></li>
+                <li><a href="">Liên Hệ</a></li>
+                <li><a href="">Đăng Ký</a></li>
+                <li><a href="">Đăng Nhập</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="menu2">
+            <ul>
+                <li><a href="">Trang Chủ</a></li>
+                <li><a href="">Tin Tức</a></li>
+                <li>
+                    <a href="">Sản Phẩm</a>
+                    <ul class="sub_menu">
+                        <li><a href="">item1</a></li>
+                        <li><a href="">item2</a></li>
+                        <li><a href="">item3</a></li>
+                        <li><a href="">item4</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Khóa Học</a></li>
+                <li><a href="">Liên Hệ</a></li>
+                <li><a href="">Đăng Ký</a></li>
+                <li><a href="">Đăng Nhập</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
